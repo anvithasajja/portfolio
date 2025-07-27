@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9fd771409.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/anvithaa.png" class="logo">
+                <ul id="sidemenu">
+                    <li onclick="closemenu()"><a href="#header">Home</a></li>
+                    <li onclick="closemenu()"><a href="#about">About</a></li>
+                    <li onclick="closemenu()"><a href="#services">Services</a></li>
+                    <li onclick="closemenu()"><a href="#projects">Projects</a></li>
+                    <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            </div> 
+        </div>
+
+    </div>
+
+    <section class="parallax">
+        <img src="images/hill1.png" id="hill1">
+        <img src="images/hill2.png" id="hill2">
+        <img src="images/hill3.png" id="hill3">
+        <img src="images/hill4.png" id="hill4">
+        <img src="images/hill5.png" id="hill5">
+        <img src="images/tree.png" id="tree">
+        <img src="images/leaf.png" id="leaf">
+        <h2 id="text">Hello, this is <span id="anvitha">Anvitha</span></h2>
+        <img src="images/plant.png" id="plant">
+    </section>
+
+    <!-- about me section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/anvitha.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Anvitha Sajja, an AI/ML Engineer and aspiring full-stack developer with a strong interest in solving real-world problems using technology. I work with Python, Java, machine learning algorithms, and web development tools like React and Node.js. I enjoy building smart, user-friendly applications that combine clean UI with intelligent backend logic. I'm always learning and exploring new technologies to grow as a developer and contribute meaningful solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('reasearch')">Reasearch</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning & AI</span><br>Developed models for prediction and classification using scikit-learn, TensorFlow, and Pandas.</li>
+                            <li><span>Deep Learning</span><br>Worked with neural networks and image data using TensorFlow/Keras; basic CNN model training experience.</li>
+                            <li><span>Frontend Development</span><br>Web App Development</li>
+                            <li><span>Backend Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Developed Android apps using Kotlin and integrated backend services.</li>
+                            <li><span>Tools & Technologies</span><br>Proficient in Python, Java, HTML, CSS, JavaScript, React, Angular, Node.js, Express, MongoDB, Kotlin, Git, VS Code, Scikit-learn, TensorFlow, Keras.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="reasearch">
+                        <ul>
+                            <li><span>Asthma Diagnosis - A Machine Learning Perceptive</span><br>Developed a machine learning model to predict asthma from clinical data. Applied data preprocessing, handled class imbalance using SMOTE, and trained models like Random Forest and SVM. Evaluated performance using accuracy, precision, and recall.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>St.Anthony's High School</span><br>2019 - 2020<br>100%</li>
+                            <li><span>Narayana Junior Collge</span><br>2020 - 2022<br>94%</li>
+                            <li><span>Mahindra University</span><br>2020 - present
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>AI/ML Engineer</h2>
+                    <p> I build intelligent systems using machine learning techniques to extract insights from data and make smart predictions. I've worked on real-world problems like asthma diagnosis and PCOS prediction using supervised models, feature engineering, and techniques like SMOTE for class balancing.</p>
+                </div>
+                 <div>
+                    <h2>Full Stack Developer</h2>
+                    <p>Wrom frontend design with React and HTML/CSS to backend logic with Node.js, Python, MongoDB, and MySQL — I develop complete web applications. I enjoy connecting all layers of a project to create robust, scalable, and user-friendly solutions.</p>
+                </div>
+                <div>
+                    <h2>Problem Solver</h2>
+                    <p> hether it's building intelligent models or creating dynamic interfaces, I love solving problems with tech. I focus on learning and improving continuously to deliver real impact through clean code, thoughtful design, and innovative ideas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- my work -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <!-- Online Auction Project -->
+            <div class="work">
+                <img src="images/online auction.png" alt="Online Auction System">
+                <div class="layer">
+                    <h3>Online Auction System for College Students</h3>
+                    <p>Built a platform where students can buy and sell items.</p>
+                    <a class="anchor" href="https://github.com/priyaaa59/online-auction-system" target="_blank">See Code</a>
+                </div>
+            </div>
+
+            <!-- Asthma Diagnosis Project -->
+            <div class="work">
+                <img src="images/asthma.jpg" alt="Asthma Diagnosis Project">
+                <div class="layer">
+                    <h3>Asthma Diagnosis – A Machine Learning Perspective</h3>
+                    <p>ML model to predict asthma risk using symptoms and environmental data with Logistic Regression and Random Forest.</p>
+                    <a class="anchor" href="#" target="_blank">See Code</a> <!-- Add your GitHub link -->
+                </div>
+            </div>
+
+            <!-- Sign Language to Voice Conversion Project -->
+            <div class="work">
+                <img src="images/sign.png" alt="Sign Language to Voice Conversion">
+                <div class="layer">
+                    <h3>Sign Language to Voice Conversion</h3>
+                    <p>Converted sign language gestures to voice using DIP and ML techniques. Used HOG and CNN for accurate gesture recognition.</p>
+                    <a class="anchor" href="#" target="_blank">See Code</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>anvithasajja913@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9121749040</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/anvithasajja"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/anvithasajja" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/anvithasajja_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Anvitha Sajja</p>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxvG2J9TsQ7W-rAD6PdiEhSONBrfSBbUvDYuxEoPaK7cL6NOgA5VD_ZH9_JfxckL3mPcQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        let text = document.getElementById('text');
+        let leaf = document.getElementById('leaf');
+        let hill1 = document.getElementById('hill1');
+        let hill4 = document.getElementById('hill4');
+        let hill5 = document.getElementById('hill5');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+
+            text.style.marginTop = value * 2.5 + 'px';
+            leaf.style.top = value * -1.5 + 'px';
+            leaf.style.left = value * 1.5 + 'px';
+            hill5.style.left = value * 1.5 + 'px';
+            hill4.style.left = value * -1.5 + 'px';
+            hill1.style.top = value * 1 + 'px';
+        });
+    </script>
+
+</body>
+
+</html>
